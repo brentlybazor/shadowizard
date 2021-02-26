@@ -4,7 +4,7 @@ Get perfect shadows evertime for the non-designer.
 
 # Installation
 
-`npm i shadowizard --save`
+`npm i shadowizard-bb --save`
 
 Then...
 

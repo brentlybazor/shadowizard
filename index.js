@@ -1,7 +1,7 @@
 function shadowizard(options) {
-    let images = documents.querySelectorAll('.shadowizard')
+    let images = document.querySelectorAll('.shadowizard')
 
-    if(options.shadow_type === 'hard')
+    if (options.shadow_type === 'hard')
         options.shadow_type = '0px'
     else
         options.shadow_type = '15px'
@@ -9,10 +9,18 @@ function shadowizard(options) {
     images.forEach(image => {
         image.style.boxShadow = `10px 10px ${options.shadow_type} 1px rgba(0,0,0,0.12)`
 
-        if(options.padding) {
-            image.styel.padding = '1em'
+        if (options.padding) {
+            image.style.padding = '1em'
         }
     });
 }
 
+const cardBB = ({ children }) => (
+    <div>
+        <p>this is the cardBB function</p>
+        {children}
+    </div>
+)
+
 module.exports.shadowizard = shadowizard
+module.exports.cardBB = cardBB
